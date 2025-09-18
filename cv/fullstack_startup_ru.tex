@@ -1,0 +1,193 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+\vspace*{-50pt}
+
+\begin{center}
+    \textbf{\huge \scshape Антон Сафонов} \\ \vspace{-1pt}
+    \large Fullstack Developer \\ \vspace{-1pt}
+    \small \href{mailto:anton.safonov.loves.cats@gmail.com}{\underline{anton.safonov.loves.cats@gmail.com}} $|$ 
+    \href{https://t.me/anton_whatever}{Telegram: \underline{@anton\_whatever}} 
+    % $|$
+    % \href{https://github.com/AHTOOOXA}{GitHub}
+\end{center}
+
+\section{Обо мне}
+\small\begin{itemize}[leftmargin=0.15in, label={}]
+\item{Fullstack Developer с сильным продуктовым мышлением и опытом работы в стартапах: глубоко погружаюсь в бизнес-контекст, задаю вопросы «зачем» и «почему» и активно участвую в продуктовых решениях. Уверенно работаю с Python (FastAPI), Vue, React и смежным стеком: от проектирования API и интеграций с AI/LLM до создания удобных интерфейсов. Предпочитаю быстрые итерации действиям вместо разговоров, беру на себя техническую ответственность и довожу задачи до стабильного результата.}
+\end{itemize}
+%-----------SKILLS-----------
+\section{Технические Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    % \small{\item{
+    %  \textbf{Языки}{: Python, JavaScript, TypeScript, SQL} \\
+    %  \textbf{Технологии}{: FastAPI, Django, Vue.js, HTMX} \\
+    %  \textbf{Базы данных}{: PostgreSQL, Clickhouse, Redis, Elasticsearch} \\
+    %  \textbf{Инструменты и DevOps}{: Docker, Git, CI/CD, RabbitMQ, Prometheus, Grafana, Loki, Posthog, Yandex Cloud} \\
+    %  \textbf{Методологии}{: Микросервисы, ETL, API разработка, Agile, Scrum}
+    % }}
+    \item Python, FastAPI, Django, SQLAlchemy, PostgreSQL, ClickHouse, Redis, RabbitMQ, Docker, Git, CI/CD, Prometheus, Grafana, Loki, Sentry, асинхронность, asyncio, микросервисы, REST API, JavaScript, TypeScript, Vue.js, HTMX, Tailwind CSS, PostHog
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Опыт Работы}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Developer (Python, React)}{Май 2025 - Настоящее время}
+      {KEYGO (управление недвижимостью)}{Москва, Россия (Удалённо)}
+      \resumeItemListStart
+        \resumeItem{Реструктурировал frontend-кодовую базу в соответствии с принципами FSD-архитектуры и спроектировал комплексную систему виджетов и компонентов}
+        \resumeItem{Создал host-приложение с нуля и обеспечиваю полную техническую поддержку как staff-, так и host-приложений}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{\textbf{Стек:} Python, FastAPI, MongoDB, Redis, React, Next.js, TypeScript, Redux, Sass}
+    \end{itemize}
+    \vspace{-8pt}
+    \resumeSubheading
+      {Python Backend Developer}{Март 2024 - Апрель 2025}
+      {Realytics (AI-аналитика производительности для потребительских бизнесов)}{Никосия, Кипр (Удалённо)}
+      \resumeItemListStart
+        \resumeItem{Работал над rule-based движком агрегации организаций по брендам}
+        \resumeItem{Спроектировал и реализовал API микросервис обработки и очистки адресов при помощи LLM и микросервис локализации}
+        \resumeItem{Создал высокопроизводительный ETL-конвейер для агрегации и обработки данных из множества сложных источников}
+        \resumeItem{Реализовал продуманный API для B2B-клиентов с приоритетом на расширяемость, кастомизируемость, возможность аудита и отслеживания историчности данных}
+        % \resumeItem{Python, FastAPI, Clickhouse, PostgreSQL, Redis, RabbitMQ, Docker, Prometheus, Grafana}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{\textbf{Стек:} Python, FastAPI, Clickhouse, PostgreSQL, Redis, RabbitMQ, Docker, Prometheus, Grafana}
+    \end{itemize}
+    \vspace{-8pt}
+    \resumeSubheading
+      {Python Backend Developer}{Январь 2022 - Март 2024}
+      {e-comet.io (сервис аналитики и автоматизации продвижения на Wildberries)}{Москва, Россия}
+      \resumeItemListStart
+        \resumeItem{Оптимизировал высоконагруженную аналитическую часть API, снизив нагрузку на Clickhouse на 20\% и время ответа API на 40\% за счёт оптимизации запросов и архитектурных изменений}
+        \resumeItem{Разработывал rule-based движок автоматического управления рекламой с гибкой настройкой и интеграцией с маркетплейсами}
+        \resumeItem{Разрабатывал ключевые модули приложения: аналитический функционал, AI ответы на отзывы, платежи, сбор данных}
+        \resumeItem{Реализовал fail-safe-логику для всех критичных бизнес-операций, связанных с управлением ценами и бюджетами клиентов, включая обработку недоступности API маркетплейсов и внутренних сервисов}
+        \resumeItem{Работал с фаундерами для реализации кастомных высокоэффективных решений для B2B клиентов}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+        \item{\textbf{Стек:} Python, FastAPI, Django, Clickhouse, PostgreSQL, Redis, RabbitMQ, Docker, Elasticsearch, Yandex Cloud}
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Проекты}
+    \resumeSubHeadingListStart
+    % \resumeProjectHeading
+    %     {\textbf{AI Tarot - Telegram Mini App - \href{https://t.me/tarotmeowbot/app?startapp=r-resume}{@TarotMeowBot}}}{2024}
+    %     \resumeItemListStart
+    %         \resumeItem{Разработал Telegram Mini App для AI-предсказаний Таро, спроектировав и реализовав fullstack веб-приложение на стеке FastAPI + Vue.js.}
+    %         \resumeItem{Реализовал ключевые модули: аутентификация, локализация, реферальная программа, система уведомлений, аналитика и интеграция оплаты.}
+    %         \resumeItem{Спроектировал монорепозиторий с ботом, воркером и API, выстроив трёхслойную модульную архитектуру.}
+    %         \resumeItem{Использовал Pydantic совместно с OpenAPI (openapi-typescript и openapi-fetch) для типизации, а также arq для обработки фоновых задач.}
+    %         \resumeItem{ FastAPI, aiogram, arq, SQLAlchemy, PostgreSQL, Redis, Typescript, Vue, Pinia, openapi-typescript, Tailwind, Docker, Dokploy, PostHog}
+    %     \resumeItemListEnd
+    
+    
+    \resumeProjectHeading
+        {\textbf{AI Tarot - Telegram Mini App \underline{\href{https://t.me/tarotmeowbot/app?startapp=r-resume}{@TarotMeowBot}}}}{2024}
+      \vspace{-10pt}
+      \resumeItemListStart
+        \resumeItem{Разработал AI-продукт с нуля как единственный инженер и продуктовый владелец: спроектировал архитектуру, реализовал backend, frontend и тг-бота, внедрил платёжную систему, аналитику, уведомления, локализацию, реферальную программу, CI/CD. Привлёк 700 пользователей, добился retention первого дня/недели/месяца 59\%/33.8\%/23\%. Проходили онбординг 92\%, тратили бесплатный лимит 52\%, более 5\% платили. Принимал все продуктовые и UX-решения на основе аналитикии и интервью.}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \item{\textbf{Стек:} FastAPI, aiogram, arq, SQLAlchemy, Redis, Typescript, Vue, Pinia, Tailwind, Docker, PostHog}
+      \end{itemize}
+
+      % \resumeProjectHeading
+      %     {\textbf{Система планирования промышленного производства}}{2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Разработал корпоративное веб-приложение для управления производственными процессами для 170 сотрудников}
+      %       \resumeItem{Реализовал функции: динамические вложенные формы, управление доступом на основе ролей, аналитика в реальном времени, drag and drop интерфейс планирования}
+      %       \resumeItem{Сократил время планирования загрузки производственных мощностей более чем на 200 часов в месяц}
+      %       \resumeItem{Python, Django, HTMX, Alpine.js, Bootstrap, Grafana, Loki, Sentry, Dokploy}
+      %     \resumeItemListEnd
+
+    \vspace{-8pt}
+    \resumeProjectHeading
+        {\textbf{Система планирования промышленного производства}}{2023}
+      \vspace{-10pt}
+        \resumeItemListStart
+        \resumeItem{Создал fullstack веб-приложение для управления производством (200+ сотр.): динамические формы, drag-and-drop UI, RBAC, real-time аналитика. Сократил время планирования на 200+ часов/мес.}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \item{\textbf{Стек:} Django, HTMX, Alpine.js, Bootstrap, Grafana, Loki, Sentry, Docker}
+      \end{itemize}
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {НИУ ВШЭ}{2020 -- 2024}
+      {Бакалавриат - Прикладная Математика и Информатика}{Факультет компьютерных наук}
+  \resumeSubHeadingListEnd
+\end{document}
