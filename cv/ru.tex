@@ -54,7 +54,7 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-8pt}
@@ -105,7 +105,7 @@
         \resumeItem{Отвечаю за host-приложение и staff-приложение, перестроил все страницы и компонентную систему}
         \resumeItem{Разработал архитектуру и реализовал full-stack решение с Python backend и React frontend}
       \resumeItemListEnd
-      \small\vspace{-6pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
     \item{\textbf{Стек:} Python, React, веб-разработка, управление недвижимостью}
     \end{itemize}
     \vspace{-8pt}
@@ -119,7 +119,7 @@
         \resumeItem{Реализовал продуманный API для B2B-клиентов с приоритетом на расширяемость, кастомизируемость, возможность аудита и отслеживания историчности данных}
         % \resumeItem{Python, FastAPI, Clickhouse, PostgreSQL, Redis, RabbitMQ, Docker, Prometheus, Grafana}
       \resumeItemListEnd
-      \small\vspace{-6pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
     \item{\textbf{Стек:} Python, FastAPI, Clickhouse, PostgreSQL, Redis, RabbitMQ, Docker, Prometheus, Grafana}
     \end{itemize}
     \vspace{-8pt}
@@ -133,7 +133,7 @@
         \resumeItem{Реализовал fail-safe-логику для всех критичных бизнес-операций, связанных с управлением ценами и бюджетами клиентов, включая обработку недоступности API маркетплейсов и внутренних сервисов}
         \resumeItem{Работал в тесной связке с фаундерами для реализации кастомных высокоэффективных решений для корпоративных клиентов}
       \resumeItemListEnd
-      \small\vspace{-6pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
         \item{\textbf{Стек:} Python, FastAPI, Django, Clickhouse, PostgreSQL, Redis, RabbitMQ, Docker, Elasticsearch, Yandex Cloud}
         \end{itemize}
   \resumeSubHeadingListEnd
@@ -154,12 +154,12 @@
     
     \resumeProjectHeading
         {\textbf{AI Tarot - Telegram Mini App \underline{\href{https://t.me/tarotmeowbot/app?startapp=r-resume}{@TarotMeowBot}}}}{2024}
-        \small\vspace{-10pt}\begin{itemize}[leftmargin=0.15in, label={}]
-        \item{Разработал AI-продукт с нуля как единственный инженер и продуктовый владелец: спроектировал архитектуру, реализовал backend, frontend и тг-бота, внедрил платёжную систему, аналитику, уведомления, локализацию, реферальную программу, CI/CD. Привлёк 700 пользователей, добился retention первого дня/недели/месяца 59\%/33.8\%/23\%. Проходили онбординг 92\%, тратили бесплатный лимит 52\%, более 5\% платили. Принимал все продуктовые и UX-решения на основе аналитикии и интервью.}
-        \end{itemize}
-        \small\vspace{-14pt}\begin{itemize}[leftmargin=0.15in, label={}]
-        \item{\textbf{Стек:} FastAPI, aiogram, arq, SQLAlchemy, Redis, Typescript, Vue, Pinia, Tailwind, Docker, PostHog}
-        \end{itemize}
+      \resumeItemListStart
+        \resumeItem{Разработал AI-продукт с нуля как единственный инженер и продуктовый владелец: спроектировал архитектуру, реализовал backend, frontend и тг-бота, внедрил платёжную систему, аналитику, уведомления, локализацию, реферальную программу, CI/CD. Привлёк 700 пользователей, добился retention первого дня/недели/месяца 59\%/33.8\%/23\%. Проходили онбординг 92\%, тратили бесплатный лимит 52\%, более 5\% платили. Принимал все продуктовые и UX-решения на основе аналитикии и интервью.}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \item{\textbf{Стек:} FastAPI, aiogram, arq, SQLAlchemy, Redis, Typescript, Vue, Pinia, Tailwind, Docker, PostHog}
+      \end{itemize}
 
       % \resumeProjectHeading
       %     {\textbf{Система планирования промышленного производства}}{2023}
@@ -173,12 +173,12 @@
     \vspace{-8pt}
     \resumeProjectHeading
         {\textbf{Система планирования промышленного производства}}{2023}
-        \small\vspace{-10pt}\begin{itemize}[leftmargin=0.15in, label={}]
-        \item{Спроектировал и самостоятельно разработал веб-приложение для управления производственными процессами на предприятии с 200+ сотрудниками. Реализовал динамические вложенные формы, drag-and-drop интерфейс планирования, RBAC и real-time аналитику. Решение позволило сократить планирование на 200+ часов в месяц. Выяснял требования и работал напрямую со стейкхолдерами }
-        \end{itemize}
-        \small\vspace{-14pt}\begin{itemize}[leftmargin=0.15in, label={}]
-        \item{\textbf{Стек:} Django, HTMX, Alpine.js, Bootstrap, Grafana, Loki, Sentry, Docker}
-        \end{itemize}
+      \resumeItemListStart
+        \resumeItem{Спроектировал и самостоятельно разработал веб-приложение для управления производственными процессами на предприятии с 200+ сотрудниками. Реализовал динамические вложенные формы, drag-and-drop интерфейс планирования, RBAC и real-time аналитику. Решение позволило сократить планирование на 200+ часов в месяц. Выяснял требования и работал напрямую со стейкхолдерами}
+      \resumeItemListEnd
+      \small\vspace{-3pt}\begin{itemize}[leftmargin=0.15in, label={}]
+      \item{\textbf{Стек:} Django, HTMX, Alpine.js, Bootstrap, Grafana, Loki, Sentry, Docker}
+      \end{itemize}
     \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
